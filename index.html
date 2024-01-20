@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+  <header>
+    <h1>Task Management</h1>
+  </header>
+
+  <main>
+    <div class="addTask">
+      <p>Title:</p>
+      <input type="text" name="taskTitle" id="taskTitle" placeholder="e.g. study math">
+
+      <p>Description:</p>
+      <input type="text" name="taskDescription" id="taskDescription" placeholder="e.g. study for math test"><br>
+      <button type="submit" id="addTaskButton">Add</button>
+    </div>
+
+    <div class="task">
+      <input type="checkbox" name="taskCheckbox" id="taskCheckbox">
+      <div id="taskLabel">
+        <h2>Task 1</h2>
+        <p>Task Description</p>
+      </div>
+      <img id="deleteButton" src="./assets/delete.svg" alt="delete">
+    </div>
+
+    <div class="taskChecked">
+      <input type="checkbox" name="taskCheckbox" id="taskCheckbox">
+      <div id="taskLabel">
+        <h2>Task 2</h2>
+        <p>Task Description</p>
+      </div>
+      <img id="deleteButton" src="./assets/delete.svg" alt="delete">
+    </div>
+  </main>
+
+  <footer>
+    <p class="copyright"><a href="">Copyright 2023 by Paul Landgraf</a></p>
+</footer>
+</body>
+</html>
