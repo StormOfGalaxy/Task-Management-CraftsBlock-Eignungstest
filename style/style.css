@@ -61,7 +61,11 @@ main {
   border-radius: 8px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+}
+
+#taskLabel{
+  padding-left: 25px;
 }
 
 .task h2{
@@ -72,8 +76,9 @@ main {
   color: var(--md-sys-color-on-primary-container);
 }
 
-.task #deleteButton{
+#deleteButton{
   width: 30px;
+  margin-left: auto;
 }
 
 .taskChecked{
@@ -82,7 +87,7 @@ main {
   border: 2px solid var(--md-sys-color-secondary);
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .taskChecked h2{
@@ -95,10 +100,6 @@ main {
   text-decoration:line-through;
 }
 
-.taskChecked #deleteButton{
-  width: 30px;
-}
-
 .addTask input:focus{
   border: 2px solid var(--md-sys-color-on-primary-container);
   outline: none;
@@ -107,10 +108,11 @@ main {
 .copyright{
   text-align: center;
   background-color: var(--md-sys-color-primary);
-  position: static;
+  position: absolute;
   margin-bottom: 0px;
   padding: 10px;
   bottom: 0px;
+  width: 100%;
 }
 
 .copyright a{
