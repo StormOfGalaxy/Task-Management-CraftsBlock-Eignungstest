@@ -1,15 +1,15 @@
 @import url('./color/color.css');
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-header{
+header {
   background-color: var(--md-sys-color-primary);
   padding: 10px;
   position: fixed;
@@ -27,7 +27,7 @@ main {
   box-sizing: border-box;
 }
 
-.addTask{
+.addTask {
   margin-top: 15px;
   color: var(--md-sys-color-on-primary-container);
   background-color: var(--md-sys-color-primary-container);
@@ -38,7 +38,7 @@ main {
   flex-direction: column;
 }
 
-.addTask #addTaskButton{
+.addTask #addTaskButton {
   margin-top: 10px;
   color: var(--md-sys-color-on-primary);
   background-color: var(--md-sys-color-on-primary-container);
@@ -55,7 +55,7 @@ main {
   width: auto;
 }
 
-.task{
+.task {
   margin-top: 10px;
   border: 2px solid var(--md-sys-color-primary);
   border-radius: 8px;
@@ -64,24 +64,24 @@ main {
   align-items: center;
 }
 
-#taskLabel{
+#taskLabel {
   padding-left: 25px;
 }
 
-.task h2{
+.task h2 {
   color: var(--md-sys-color-primary);
 }
 
-.task p{
+.task p {
   color: var(--md-sys-color-on-primary-container);
 }
 
-#deleteButton{
+#deleteButton {
   width: 30px;
   margin-left: auto;
 }
 
-.taskChecked{
+.taskChecked {
   padding: 10px;
   margin-top: 10px;
   border: 2px solid var(--md-sys-color-secondary);
@@ -90,22 +90,22 @@ main {
   align-items: center;
 }
 
-.taskChecked h2{
+.taskChecked h2 {
   color: var(--md-sys-color-secondary);
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 
-.taskChecked p{
+.taskChecked p {
   color: var(--md-sys-color-on-secondary-container);
-  text-decoration:line-through;
+  text-decoration: line-through;
 }
 
-.addTask input:focus{
+.addTask input:focus {
   border: 2px solid var(--md-sys-color-on-primary-container);
   outline: none;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   background-color: var(--md-sys-color-primary);
   position: absolute;
@@ -115,10 +115,34 @@ main {
   width: 100%;
 }
 
-.copyright a{
+.copyright a {
   color: var(--md-sys-color-on-primary);
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 100px 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 100px 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding: 100px 25px;
+  }
+
+  header {
+    padding: 2.5px;
+  }
 }
